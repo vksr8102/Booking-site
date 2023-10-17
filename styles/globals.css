@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&family=Rozha+One&display=swap');
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x:hidden;
+  overflow-y: scroll;
+}
+
+.homeImage{
+  background: url("../public/img/Rectangle\ 3.svg") l  cover no-repeat;
+}
+
+.homeImage2{
+  background: linear-gradient(90deg, #FFF 35.42%, rgba(253, 255, 252, 0.80) 50.52%, rgba(253, 255, 252, 0.60) 65.11%, rgba(253, 255, 252, 0.40) 78.13%, rgba(196, 196, 196, 0.00) 100%);
+}
+.rozha-one{
+  font-family: 'Rozha One', serif;
+}
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+.card{
+  box-shadow: 0px 0px 16px 0px rgba(194, 198, 204, 0.60);
+}
+
+.rdrDefinedRangesWrapper{
+  display: none;
+}
+
+
+ /*  ----------------------------------------------------------------------------------------------------------------------------------------- SPINNNER -------------------------------------------------------------- */
+ .spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%,#474bff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
+ 
+
+
+
+
+.shapes {
+  width: 44.8px;
+  height: 44.8px;
+  color: #0A225F;
+  background: linear-gradient(currentColor 0 0),
+         linear-gradient(currentColor 0 0),
+         linear-gradient(currentColor 0 0),
+         linear-gradient(currentColor 0 0);
+  background-size: 23.4px 23.4px;
+  background-repeat: no-repeat;
+  animation: shapes-53h9rpmd 1.5s infinite cubic-bezier(0.3,1,0,1);
+} 
+
+@keyframes shapes-53h9rpmd {
+  0% {
+     background-position: 0    0,100% 0   ,100% 100%,0 100%;
+  }
+
+  33% {
+     background-position: 0    0,100% 0   ,100% 100%,0 100%;
+     width: 67.2px;
+     height: 67.2px;
+  }
+
+  66% {
+     background-position: 100% 0,100% 100%,0    100%,0 0;
+     width: 67.2px;
+     height: 67.2px;
+  }
+
+  100% {
+     background-position: 100% 0,100% 100%,0    100%,0 0;
+  }
+}
+
+
+/* //----------------AUTOCOMPLETE---------------- */
+ 
